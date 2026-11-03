@@ -1,0 +1,1190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SPECTRUM Student Club | Jain (Deemed-to-be University)</title>
+  <meta name="description" content="Official Linktree of Spectrum Student Club at Jain University. Something Different is Here. Auditions Are Open — Connect, Create, Grow, Together." />
+  <meta name="theme-color" content="#06040d" />
+
+  <!-- Favicon & Open Graph Metadata -->
+  <link rel="icon" type="image/png" href="assets/avatar.png" />
+  <meta property="og:title" content="SPECTRUM Student Club | Jain University" />
+  <meta property="og:description" content="Something Different is Here. Auditions Are Open — Register Now!" />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="assets/avatar.png" />
+
+  <!-- Google Fonts: Bebas Neue, Orbitron, Caveat, Montserrat, Inter -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Caveat:wght@600;700&family=Inter:wght@400;500;600;700&family=Montserrat:wght@500;600;700;800;900&family=Orbitron:wght@700;800;900&display=swap" rel="stylesheet" />
+
+  <!-- Stylesheet -->
+  <style>
+/* ==========================================================================
+   SPECTRUM STUDENT CLUB - LINKTREE
+   Theme: Cosmic Cyberpunk / Neon Chromatic / Authentic Poster Typography
+   Fonts: Orbitron (Logo), Bebas Neue (Poster Headlines), Caveat (Script)
+   ========================================================================== */
+
+:root {
+  /* Core Color Palette */
+  --bg-deep: #06040d;
+  --bg-surface: rgba(14, 12, 28, 0.72);
+  --bg-surface-hover: rgba(24, 20, 48, 0.85);
+  --bg-card: rgba(18, 14, 38, 0.65);
+  --bg-card-border: rgba(255, 255, 255, 0.08);
+
+  /* Neon Brand Accents */
+  --neon-cyan: #00f0ff;
+  --neon-cyan-glow: rgba(0, 240, 255, 0.35);
+  --neon-magenta: #ff007f;
+  --neon-magenta-glow: rgba(255, 0, 127, 0.35);
+  --neon-purple: #9b51e0;
+  --neon-orange: #ff5500;
+  --neon-amber: #ffaa00;
+  --neon-yellow: #ffd000;
+  --neon-blue: #0077ff;
+
+  /* Text Colors */
+  --text-primary: #ffffff;
+  --text-secondary: #c5cde3;
+  --text-muted: #808ba6;
+  --text-highlight: #00f0ff;
+
+  /* Poster Typography */
+  --font-logo: 'Orbitron', sans-serif;
+  --font-poster: 'Bebas Neue', sans-serif;
+  --font-script: 'Caveat', cursive;
+  --font-ui: 'Montserrat', -apple-system, BlinkMacSystemFont, sans-serif;
+  --font-body: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+
+  /* Transitions & Shadows */
+  --transition-fast: 0.2s cubic-bezier(0.16, 1, 0.3, 1);
+  --transition-smooth: 0.35s cubic-bezier(0.16, 1, 0.3, 1);
+  --glass-shadow: 0 12px 36px 0 rgba(0, 0, 0, 0.45);
+  --glow-shadow: 0 0 25px var(--neon-cyan-glow);
+}
+
+/* Base Reset & Layout */
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 16px;
+  scroll-behavior: smooth;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  font-family: var(--font-body);
+  background-color: var(--bg-deep);
+  color: var(--text-primary);
+  min-height: 100vh;
+  position: relative;
+  overflow-x: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  line-height: 1.5;
+}
+
+/* Background Atmosphere */
+.cosmic-bg {
+  position: fixed;
+  inset: 0;
+  z-index: 0;
+  pointer-events: none;
+  overflow: hidden;
+}
+
+/* Floating Nebula Gradients */
+.nebula {
+  position: absolute;
+  border-radius: 50%;
+  filter: blur(90px);
+  opacity: 0.45;
+  will-change: transform;
+}
+
+.nebula-1 {
+  width: 550px;
+  height: 550px;
+  top: -120px;
+  left: -100px;
+  background: radial-gradient(circle, var(--neon-cyan) 0%, transparent 70%);
+  animation: floatNebula1 18s ease-in-out infinite alternate;
+}
+
+.nebula-2 {
+  width: 650px;
+  height: 650px;
+  top: 20%;
+  right: -150px;
+  background: radial-gradient(circle, var(--neon-magenta) 0%, transparent 70%);
+  animation: floatNebula2 22s ease-in-out infinite alternate;
+}
+
+.nebula-3 {
+  width: 500px;
+  height: 500px;
+  bottom: 10%;
+  left: 10%;
+  background: radial-gradient(circle, var(--neon-purple) 0%, transparent 70%);
+  animation: floatNebula3 25s ease-in-out infinite alternate;
+}
+
+.nebula-4 {
+  width: 450px;
+  height: 450px;
+  bottom: -100px;
+  right: 15%;
+  background: radial-gradient(circle, var(--neon-orange) 0%, transparent 70%);
+  animation: floatNebula1 20s ease-in-out infinite alternate-reverse;
+}
+
+@keyframes floatNebula1 {
+  0% { transform: translate(0, 0) scale(1); }
+  50% { transform: translate(60px, 40px) scale(1.1); }
+  100% { transform: translate(-30px, 80px) scale(0.95); }
+}
+
+@keyframes floatNebula2 {
+  0% { transform: translate(0, 0) scale(1); }
+  50% { transform: translate(-50px, -40px) scale(1.15); }
+  100% { transform: translate(40px, 60px) scale(0.9); }
+}
+
+@keyframes floatNebula3 {
+  0% { transform: translate(0, 0) scale(0.95); }
+  50% { transform: translate(40px, -60px) scale(1.1); }
+  100% { transform: translate(-50px, 30px) scale(1.05); }
+}
+
+/* Subtle Canvas for Interactive Stars / Dust Particles */
+#particles-canvas {
+  position: fixed;
+  inset: 0;
+  z-index: 1;
+  pointer-events: none;
+}
+
+/* Cyber Subtle Grid Texture */
+.cyber-grid {
+  position: fixed;
+  inset: 0;
+  z-index: 2;
+  pointer-events: none;
+  background-image: 
+    linear-gradient(rgba(255, 255, 255, 0.02) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255, 255, 255, 0.02) 1px, transparent 1px);
+  background-size: 40px 40px;
+  mask-image: radial-gradient(circle at 50% 30%, black 30%, transparent 80%);
+  -webkit-mask-image: radial-gradient(circle at 50% 30%, black 30%, transparent 80%);
+}
+
+/* Main Container */
+.page-wrapper {
+  position: relative;
+  z-index: 10;
+  width: 100%;
+  max-width: 620px;
+  padding: 2rem 1.25rem 4rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Top Navigation (Clean Centered Brand Pill) */
+.top-nav {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 2rem;
+}
+
+.brand-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.6rem;
+  padding: 0.45rem 1.1rem;
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: 999px;
+  font-family: var(--font-ui);
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  color: var(--text-secondary);
+  text-transform: uppercase;
+  transition: var(--transition-fast);
+}
+
+.brand-badge:hover {
+  background: rgba(255, 255, 255, 0.1);
+  border-color: rgba(0, 240, 255, 0.4);
+}
+
+.brand-badge .jgi-pill {
+  background: linear-gradient(135deg, #00f0ff, #0077ff);
+  color: #04020b;
+  font-weight: 900;
+  padding: 0.12rem 0.5rem;
+  border-radius: 999px;
+  font-size: 0.68rem;
+  letter-spacing: 0.05em;
+}
+
+
+
+/* Typography & Titles - Exact Match to Poster */
+.club-title-group {
+  margin-bottom: 0.35rem;
+}
+
+/* "SOMETHING DIFFERENT IS HERE." in Bebas Neue */
+.sub-tagline {
+  font-family: var(--font-poster);
+  font-size: 1.35rem;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--neon-cyan);
+  margin-bottom: 0.2rem;
+  font-weight: 400;
+  text-shadow: 0 0 14px var(--neon-cyan-glow);
+  line-height: 1.2;
+}
+
+/* "SPECTRUM" in Orbitron - exact match to logo */
+.club-title {
+  font-family: var(--font-logo);
+  font-size: 3rem;
+  font-weight: 900;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  line-height: 1.1;
+  background: linear-gradient(135deg, #ffffff 10%, #00f0ff 45%, #ff007f 80%, #ffaa00 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  filter: drop-shadow(0 2px 20px rgba(0, 240, 255, 0.25));
+  margin-bottom: 0.35rem;
+}
+
+/* Subtitle in Bebas Neue / Montserrat */
+.club-subtitle {
+  font-family: var(--font-poster);
+  font-size: 1.1rem;
+  font-weight: 400;
+  color: var(--text-secondary);
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  margin-bottom: 0.6rem;
+}
+
+.club-subtitle span {
+  color: var(--neon-magenta);
+  margin: 0 0.4rem;
+}
+
+/* Handwritten Script "Be a Part of Something Greater" in Caveat */
+.poster-script-phrase {
+  font-family: var(--font-script);
+  font-size: 2.1rem;
+  color: #ff3399;
+  letter-spacing: 0.02em;
+  line-height: 1.1;
+  margin: 0.2rem 0 0.75rem;
+  transform: rotate(-2.5deg);
+  text-shadow: 0 0 16px rgba(255, 0, 127, 0.45);
+  display: inline-block;
+  animation: scriptGlow 3s ease-in-out infinite alternate;
+}
+
+@keyframes scriptGlow {
+  0% { filter: drop-shadow(0 0 6px rgba(255, 0, 127, 0.3)); transform: rotate(-2.5deg) scale(0.98); }
+  100% { filter: drop-shadow(0 0 14px rgba(255, 0, 127, 0.7)); transform: rotate(-2.5deg) scale(1.02); }
+}
+
+/* Mission Pillar Badges (CREATE • COLLABORATE • EXPLORE • BELONG) */
+.mission-badges {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.5rem;
+  margin-top: 0.4rem;
+}
+
+.mission-pill {
+  font-family: var(--font-poster);
+  font-size: 0.95rem;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  font-weight: 400;
+  padding: 0.2rem 0.75rem;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid rgba(255, 255, 255, 0.09);
+  color: var(--text-muted);
+  transition: var(--transition-fast);
+}
+
+.mission-pill:hover {
+  border-color: rgba(0, 240, 255, 0.35);
+  color: var(--text-primary);
+  background: rgba(0, 240, 255, 0.08);
+}
+
+/* Section Header Divider */
+.links-section-header {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin: 1.6rem 0 1.25rem;
+}
+
+.section-line {
+  flex: 1;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.15), transparent);
+}
+
+.section-label {
+  font-family: var(--font-poster);
+  font-size: 1.05rem;
+  text-transform: uppercase;
+  letter-spacing: 0.18em;
+  color: var(--text-muted);
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.section-label .pulse-dot {
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: var(--neon-cyan);
+  box-shadow: 0 0 8px var(--neon-cyan);
+  animation: pulse 1.8s infinite;
+}
+
+@keyframes pulse {
+  0%, 100% { opacity: 1; transform: scale(1); }
+  50% { opacity: 0.4; transform: scale(0.8); }
+}
+
+/* Links Container */
+.links-list {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+/* ==========================================================================
+   FEATURED AUDITIONS CARD (Spotlight Call-To-Action)
+   ========================================================================== */
+.auditions-featured-card {
+  position: relative;
+  width: 100%;
+  border-radius: 18px;
+  padding: 2px;
+  background: linear-gradient(135deg, var(--neon-cyan), var(--neon-magenta), var(--neon-amber));
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5), 0 0 20px rgba(0, 240, 255, 0.25);
+  margin-bottom: 0.5rem;
+  transition: transform var(--transition-smooth), box-shadow var(--transition-smooth);
+}
+
+.auditions-featured-card:hover {
+  transform: translateY(-4px) scale(1.01);
+  box-shadow: 0 16px 40px rgba(0, 0, 0, 0.6), 0 0 32px rgba(255, 0, 127, 0.35);
+}
+
+.auditions-card-inner {
+  position: relative;
+  background: linear-gradient(145deg, #130f2c 0%, #0d0920 100%);
+  border-radius: 16px;
+  padding: 1.4rem 1.35rem;
+  overflow: hidden;
+}
+
+.auditions-badge-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 0.9rem;
+}
+
+.auditions-live-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.45rem;
+  background: rgba(255, 0, 127, 0.18);
+  border: 1px solid rgba(255, 0, 127, 0.4);
+  color: #ff3399;
+  font-family: var(--font-poster);
+  font-size: 0.95rem;
+  letter-spacing: 0.1em;
+  padding: 0.2rem 0.75rem;
+  border-radius: 999px;
+  text-transform: uppercase;
+}
+
+.auditions-live-pill .live-indicator {
+  width: 8px;
+  height: 8px;
+  background: #ff007f;
+  border-radius: 50%;
+  box-shadow: 0 0 10px #ff007f;
+  animation: pulse 1.2s infinite;
+}
+
+.date-pill {
+  font-family: var(--font-poster);
+  font-size: 0.95rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--neon-cyan);
+  background: rgba(0, 240, 255, 0.1);
+  border: 1px solid rgba(0, 240, 255, 0.25);
+  padding: 0.2rem 0.75rem;
+  border-radius: 999px;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+}
+
+.auditions-main-content {
+  display: flex;
+  align-items: center;
+  gap: 1.25rem;
+}
+
+.auditions-icon-box {
+  width: 56px;
+  height: 56px;
+  flex-shrink: 0;
+  border-radius: 14px;
+  background: linear-gradient(135deg, rgba(255, 0, 127, 0.2), rgba(0, 240, 255, 0.2));
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.75rem;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+}
+
+.auditions-icon-box .megaphone-glow {
+  animation: bounceMegaphone 2.5s infinite ease-in-out;
+}
+
+@keyframes bounceMegaphone {
+  0%, 100% { transform: scale(1) rotate(0deg); }
+  30% { transform: scale(1.15) rotate(-6deg); }
+  60% { transform: scale(1.08) rotate(4deg); }
+}
+
+.auditions-text-info {
+  flex: 1;
+}
+
+.auditions-heading {
+  font-family: var(--font-poster);
+  font-size: 1.7rem;
+  color: #ffffff;
+  letter-spacing: 0.06em;
+  margin-bottom: 0.2rem;
+  line-height: 1.1;
+}
+
+.auditions-subtext {
+  font-family: var(--font-body);
+  font-size: 0.85rem;
+  color: var(--text-secondary);
+  line-height: 1.35;
+  margin-bottom: 0.95rem;
+}
+
+/* Full Width Featured Action Button */
+.btn-primary-action {
+  width: 100%;
+  background: linear-gradient(135deg, var(--neon-magenta), var(--neon-orange));
+  color: #ffffff;
+  font-family: var(--font-poster);
+  font-size: 1.15rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  padding: 0.75rem 1.25rem;
+  border-radius: 12px;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  border: none;
+  cursor: pointer;
+  transition: var(--transition-fast);
+  box-shadow: 0 4px 15px rgba(255, 0, 127, 0.35);
+}
+
+.btn-primary-action:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 24px rgba(255, 0, 127, 0.55);
+  filter: brightness(1.1);
+}
+
+/* ==========================================================================
+   STANDARD LINK CARDS (Glassmorphism & Neon Glow)
+   ========================================================================== */
+.link-card {
+  position: relative;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1.05rem 1.25rem;
+  border-radius: 16px;
+  background: var(--bg-surface);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid var(--bg-card-border);
+  text-decoration: none;
+  color: var(--text-primary);
+  cursor: pointer;
+  overflow: hidden;
+  box-shadow: var(--glass-shadow);
+  transform-style: preserve-3d;
+  transition: transform var(--transition-smooth), border-color var(--transition-smooth), box-shadow var(--transition-smooth), background var(--transition-smooth);
+}
+
+/* Card Hover Glare Sheen */
+.link-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -120%;
+  width: 80%;
+  height: 100%;
+  background: linear-gradient(
+    90deg,
+    transparent,
+    rgba(255, 255, 255, 0.12),
+    transparent
+  );
+  transform: skewX(-25deg);
+  transition: left 0.75s ease;
+  pointer-events: none;
+}
+
+.link-card:hover::before {
+  left: 150%;
+}
+
+.link-card:hover {
+  transform: translateY(-3px) scale(1.015);
+  background: var(--bg-surface-hover);
+}
+
+/* Individual Channel Themes */
+.card-instagram:hover {
+  border-color: rgba(225, 48, 108, 0.6);
+  box-shadow: 0 10px 25px rgba(225, 48, 108, 0.25), 0 0 15px rgba(131, 58, 180, 0.2);
+}
+
+.card-x:hover {
+  border-color: rgba(0, 240, 255, 0.6);
+  box-shadow: 0 10px 25px rgba(0, 240, 255, 0.25);
+}
+
+.card-linkedin:hover {
+  border-color: rgba(10, 102, 194, 0.6);
+  box-shadow: 0 10px 25px rgba(10, 102, 194, 0.25);
+}
+
+.card-youtube:hover {
+  border-color: rgba(255, 0, 51, 0.6);
+  box-shadow: 0 10px 25px rgba(255, 0, 51, 0.25);
+}
+
+/* Link Card Content */
+.link-left {
+  display: flex;
+  align-items: center;
+  gap: 1.15rem;
+}
+
+.channel-icon {
+  width: 48px;
+  height: 48px;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  transition: transform var(--transition-fast);
+}
+
+.link-card:hover .channel-icon {
+  transform: scale(1.1) rotate(3deg);
+}
+
+/* Custom Channel Icon Backgrounds */
+.icon-instagram {
+  background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+  color: #ffffff;
+  box-shadow: 0 4px 15px rgba(214, 36, 159, 0.4);
+}
+
+.icon-x {
+  background: #000000;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  color: #ffffff;
+  box-shadow: 0 4px 15px rgba(0, 240, 255, 0.25);
+}
+
+.icon-linkedin {
+  background: #0077b5;
+  color: #ffffff;
+  box-shadow: 0 4px 15px rgba(0, 119, 181, 0.4);
+}
+
+.icon-youtube {
+  background: #ff0000;
+  color: #ffffff;
+  box-shadow: 0 4px 15px rgba(255, 0, 0, 0.4);
+}
+
+.channel-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.channel-title {
+  font-family: var(--font-poster);
+  font-size: 1.25rem;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--text-primary);
+  line-height: 1.1;
+}
+
+.channel-handle {
+  font-size: 0.82rem;
+  color: var(--neon-cyan);
+  font-family: var(--font-ui);
+  font-weight: 600;
+  margin-top: 0.1rem;
+}
+
+.channel-desc {
+  font-size: 0.78rem;
+  color: var(--text-muted);
+  margin-top: 0.15rem;
+}
+
+.link-right {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.arrow-icon {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.05);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--text-muted);
+  transition: var(--transition-fast);
+}
+
+.link-card:hover .arrow-icon {
+  background: rgba(255, 255, 255, 0.15);
+  color: #ffffff;
+  transform: translateX(4px);
+}
+
+/* Bottom Mountains Silhouette & Neon Horizon Footer */
+.mountains-footer {
+  width: 100%;
+  margin-top: 3.5rem;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.mountains-svg-wrap {
+  width: 100%;
+  max-width: 500px;
+  margin-bottom: 1.5rem;
+  position: relative;
+}
+
+.horizon-glow {
+  position: absolute;
+  bottom: 15px;
+  left: 10%;
+  width: 80%;
+  height: 25px;
+  background: linear-gradient(90deg, #ff007f, #ff6600, #ffaa00);
+  filter: blur(20px);
+  opacity: 0.85;
+  border-radius: 50%;
+  animation: horizonPulse 4s ease-in-out infinite alternate;
+}
+
+@keyframes horizonPulse {
+  0% { opacity: 0.6; filter: blur(16px); }
+  100% { opacity: 1; filter: blur(24px); }
+}
+
+.mountain-svg {
+  width: 100%;
+  height: auto;
+  position: relative;
+  z-index: 2;
+  filter: drop-shadow(0 -5px 12px rgba(255, 0, 127, 0.2));
+}
+
+.footer-slogan {
+  font-family: var(--font-poster);
+  font-size: 1.15rem;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: var(--neon-cyan);
+  margin-bottom: 0.25rem;
+}
+
+.footer-sub {
+  font-family: var(--font-poster);
+  font-size: 0.95rem;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--text-muted);
+  margin-bottom: 1rem;
+}
+
+.copyright {
+  font-family: var(--font-ui);
+  font-size: 0.72rem;
+  letter-spacing: 0.05em;
+  color: var(--text-muted);
+}
+
+/* Responsive tweaks */
+@media (max-width: 480px) {
+  .page-wrapper {
+    padding: 1.5rem 1rem 3rem;
+  }
+  .club-title {
+    font-size: 2.35rem;
+  }
+  .sub-tagline {
+    font-size: 1.15rem;
+  }
+  .poster-script-phrase {
+    font-size: 1.7rem;
+  }
+  .avatar-wrapper {
+    width: 130px;
+    height: 130px;
+  }
+  .auditions-main-content {
+    flex-direction: column;
+    text-align: center;
+    gap: 0.85rem;
+  }
+  .link-card {
+    padding: 0.95rem 1rem;
+  }
+  .channel-icon {
+    width: 42px;
+    height: 42px;
+  }
+}
+
+</style>
+</head>
+<body>
+
+  <!-- Background Ambience & Canvas -->
+  <div class="cosmic-bg">
+    <div class="nebula nebula-1"></div>
+    <div class="nebula nebula-2"></div>
+    <div class="nebula nebula-3"></div>
+    <div class="nebula nebula-4"></div>
+  </div>
+  <canvas id="particles-canvas"></canvas>
+  <div class="cyber-grid"></div>
+
+  <!-- Page Wrapper -->
+  <main class="page-wrapper">
+
+    <!-- Top Utility Header (Centered Brand Pill) -->
+    <header class="top-nav">
+      <div class="brand-badge">
+        <span class="jgi-pill">JGI</span>
+        <span>Jain (Deemed-to-be University)</span>
+      </div>
+    </header>
+
+   
+      <!-- Headings & Brand Identity (Poster Typography) -->
+      <div class="club-title-group">
+        <div class="sub-tagline">Something Different is Here.</div>
+        <h1 class="club-title">SPECTRUM</h1>
+        <div class="club-subtitle">STUDENT CLUB <span>✦</span> JAIN UNIVERSITY</div>
+      </div>
+
+      <!-- Handwritten Accent Phrase from Official Theme -->
+      <div class="poster-script-phrase">
+        Be a Part of Something Greater
+      </div>
+
+      <!-- Pillar Badges -->
+      <div class="mission-badges">
+        <span class="mission-pill">Create</span>
+        <span class="mission-pill">Collaborate</span> 
+        <span class="mission-pill">Explore</span>
+        <span class="mission-pill">Belong</span>
+      </div>
+    </section>
+
+    <!-- FEATURED SPOTLIGHT CARD: Auditions Open & Google Form Registration -->
+    <article class="auditions-featured-card">
+      <div class="auditions-card-inner">
+        <div class="auditions-badge-row">
+          <div class="auditions-live-pill">
+            <span class="live-indicator"></span>
+            <span>Auditions Are Open</span>
+          </div>
+          <div class="date-pill">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
+              <line x1="16" y1="2" x2="16" y2="6"></line>
+              <line x1="8" y1="2" x2="8" y2="6"></line>
+              <line x1="3" y1="10" x2="21" y2="10"></line>
+            </svg>
+            <span>Begins 17 October</span>
+          </div>
+        </div>
+
+        <div class="auditions-main-content">
+          <div class="auditions-icon-box">
+            <span class="megaphone-glow">📣</span>
+          </div>
+          <div class="auditions-text-info">
+            <h2 class="auditions-heading">
+              Ready to Join Spectrum?
+            </h2>
+            <p class="auditions-subtext">
+              Ideas | People | Impact — Step into the spotlight and showcase your talent, creativity, and leadership.
+            </p>
+            <a href="https://docs.google.com/forms/d/e/1FAIpQLSeuQZmLF7aEmgrcZo00WUmoH4tT67Pb-o1rof2t6VaHSPlNIg/viewform" target="_blank" rel="noopener noreferrer" class="btn-primary-action">
+              <span>Fill Audition Form</span>
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                <line x1="7" y1="17" x2="17" y2="7"></line>
+                <polyline points="7 7 17 7 17 17"></polyline>
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+    </article>
+
+    <!-- Links Section Header -->
+    <div class="links-section-header">
+      <span class="section-line"></span>
+      <span class="section-label">
+        <span class="pulse-dot"></span>
+        Connect With Us
+      </span>
+      <span class="section-line"></span>
+    </div>
+
+    <!-- Official Community Links List -->
+    <div class="links-list">
+
+      <!-- 1. INSTAGRAM -->
+      <a href="https://instagram.com/spectrum.jgi" target="_blank" rel="noopener noreferrer" class="link-card card-instagram">
+        <div class="link-left">
+          <div class="channel-icon icon-instagram">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+              <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+              <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+            </svg>
+          </div>
+          <div class="channel-info">
+            <div class="channel-title">Instagram</div>
+            <div class="channel-handle">@spectrum.jgi</div>
+            <div class="channel-desc">Event highlights, behind-the-scenes & stories</div>
+          </div>
+        </div>
+        <div class="link-right">
+          <div class="arrow-icon">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+              <polyline points="9 18 15 12 9 6"></polyline>
+            </svg>
+          </div>
+        </div>
+      </a>
+
+      <!-- 2. X (TWITTER) -->
+      <a href="https://x.com/Specturn_jgi" target="_blank" rel="noopener noreferrer" class="link-card card-x">
+        <div class="link-left">
+          <div class="channel-icon icon-x">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+              <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"></path>
+            </svg>
+          </div>
+          <div class="channel-info">
+            <div class="channel-title">X (formerly Twitter)</div>
+            <div class="channel-handle">@Specturn_jgi</div>
+            <div class="channel-desc">Real-time updates, polls & campus threads</div>
+          </div>
+        </div>
+        <div class="link-right">
+          <div class="arrow-icon">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+              <polyline points="9 18 15 12 9 6"></polyline>
+            </svg>
+          </div>
+        </div>
+      </a>
+
+      <!-- 3. LINKEDIN -->
+      <a href="https://linkedin.com/in/spectrum-jgi-889851448" target="_blank" rel="noopener noreferrer" class="link-card card-linkedin">
+        <div class="link-left">
+          <div class="channel-icon icon-linkedin">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+              <rect x="2" y="9" width="4" height="12"></rect>
+              <circle cx="4" cy="4" r="2"></circle>
+            </svg>
+          </div>
+          <div class="channel-info">
+            <div class="channel-title">LinkedIn</div>
+            <div class="channel-handle">spectrum-jgi</div>
+            <div class="channel-desc">Professional networking, club achievements & alumni</div>
+          </div>
+        </div>
+        <div class="link-right">
+          <div class="arrow-icon">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+              <polyline points="9 18 15 12 9 6"></polyline>
+            </svg>
+          </div>
+        </div>
+      </a>
+
+      <!-- 4. YOUTUBE -->
+      <a href="https://youtube.com/@spectrum-jgi?si=TzhXpIcKea48v03f" target="_blank" rel="noopener noreferrer" class="link-card card-youtube">
+        <div class="link-left">
+          <div class="channel-icon icon-youtube">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+              <path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/>
+            </svg>
+          </div>
+          <div class="channel-info">
+            <div class="channel-title">YouTube</div>
+            <div class="channel-handle">@spectrum-jgi</div>
+            <div class="channel-desc">Event recaps, project showcases & performances</div>
+          </div>
+        </div>
+        <div class="link-right">
+          <div class="arrow-icon">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+              <polyline points="9 18 15 12 9 6"></polyline>
+            </svg>
+          </div>
+        </div>
+      </a>
+
+    </div>
+
+    <!-- Mountains Silhouette & Neon Horizon Footer -->
+    <footer class="mountains-footer">
+      <div class="mountains-svg-wrap">
+        <div class="horizon-glow"></div>
+        <svg class="mountain-svg" viewBox="0 0 600 120" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <!-- Background mountain ridge -->
+          <path d="M0 120L45 85L110 102L180 65L240 92L310 50L375 88L440 60L510 95L570 70L600 85V120H0Z" fill="#130e28" opacity="0.6"/>
+          <!-- Middle mountain ridge -->
+          <path d="M0 120L60 90L135 68L205 100L275 60L340 96L415 55L485 92L555 72L600 100V120H0Z" fill="#0d091e" opacity="0.85"/>
+          <!-- Foreground sharp ridge -->
+          <path d="M0 120L80 98L160 82L230 108L300 78L370 106L450 75L520 102L600 88V120H0Z" fill="#06040d"/>
+        </svg>
+      </div>
+
+      <div class="footer-slogan">DIFFERENT PERSPECTIVES LIMITLESS IMPACTS</div>
+      <div class="footer-sub">A BRIGHTER CAMPUS TOGETHER</div>
+      <div class="copyright">
+        © SPECTRUM Student Club • Jain (Deemed-to-be University)
+      </div>
+    </footer>
+
+  </main>
+
+  <!-- JavaScript -->
+  <script>
+/**
+ * SPECTRUM STUDENT CLUB - LINKTREE
+ * Theme: Cosmic Cyberpunk / Neon Chromatic / Authentic Poster Typography
+ * Subtle Animations: Interactive particles canvas & 3D magnetic card tilt
+ */
+
+(function () {
+  'use strict';
+
+  const CONFIG = {
+    particleCount: 50,
+  };
+
+  // --- Subtle Cosmic Stardust Canvas Particles ---
+  function initParticles() {
+    const canvas = document.getElementById('particles-canvas');
+    if (!canvas) return;
+    const ctx = canvas.getContext('2d');
+    if (!ctx) return;
+
+    let width = (canvas.width = window.innerWidth);
+    let height = (canvas.height = window.innerHeight);
+
+    window.addEventListener('resize', () => {
+      width = canvas.width = window.innerWidth;
+      height = canvas.height = window.innerHeight;
+    });
+
+    const particles = [];
+    const colors = ['#00f0ff', '#ff007f', '#ffaa00', '#c5cde3', '#9b51e0'];
+
+    for (let i = 0; i < CONFIG.particleCount; i++) {
+      particles.push({
+        x: Math.random() * width,
+        y: Math.random() * height,
+        radius: Math.random() * 1.8 + 0.5,
+        color: colors[Math.floor(Math.random() * colors.length)],
+        speedY: -(Math.random() * 0.4 + 0.15),
+        speedX: (Math.random() - 0.5) * 0.3,
+        alpha: Math.random() * 0.7 + 0.2,
+        pulseSpeed: Math.random() * 0.02 + 0.01,
+        angle: Math.random() * Math.PI * 2,
+      });
+    }
+
+    let mouse = { x: -1000, y: -1000 };
+    window.addEventListener('mousemove', (e) => {
+      mouse.x = e.clientX;
+      mouse.y = e.clientY;
+    });
+
+    let animationFrameId;
+
+    function render() {
+      if (document.hidden) {
+        animationFrameId = requestAnimationFrame(render);
+        return;
+      }
+
+      ctx.clearRect(0, 0, width, height);
+
+      for (let i = 0; i < particles.length; i++) {
+        const p = particles[i];
+
+        // Move upward & sway gently
+        p.y += p.speedY;
+        p.x += p.speedX;
+        p.angle += p.pulseSpeed;
+
+        // Wrap around boundaries
+        if (p.y < -10) {
+          p.y = height + 10;
+          p.x = Math.random() * width;
+        }
+        if (p.x < -10) p.x = width + 10;
+        if (p.x > width + 10) p.x = -10;
+
+        // Gentle mouse interaction (faint repel)
+        const dx = mouse.x - p.x;
+        const dy = mouse.y - p.y;
+        const dist = Math.sqrt(dx * dx + dy * dy);
+        if (dist < 100) {
+          const force = (100 - dist) / 100;
+          p.x -= (dx / dist) * force * 1.5;
+          p.y -= (dy / dist) * force * 1.5;
+        }
+
+        // Twinkle opacity
+        const currentAlpha = Math.max(0.1, Math.min(1, p.alpha + Math.sin(p.angle) * 0.3));
+
+        ctx.save();
+        ctx.beginPath();
+        ctx.arc(p.x, p.y, p.radius, 0, Math.PI * 2);
+        ctx.fillStyle = p.color;
+        ctx.globalAlpha = currentAlpha;
+        ctx.shadowBlur = 8;
+        ctx.shadowColor = p.color;
+        ctx.fill();
+        ctx.restore();
+      }
+
+      animationFrameId = requestAnimationFrame(render);
+    }
+
+    render();
+  }
+
+  // --- 3D Magnetic Card Tilt Interaction ---
+  function initTiltEffects() {
+    // Only enable tilt on non-touch devices
+    if (window.matchMedia('(pointer: coarse)').matches) return;
+
+    const cards = document.querySelectorAll('.link-card, .auditions-featured-card');
+
+    cards.forEach((card) => {
+      card.addEventListener('mousemove', (e) => {
+        const rect = card.getBoundingClientRect();
+        const x = e.clientX - rect.left;
+        const y = e.clientY - rect.top;
+        const centerX = rect.width / 2;
+        const centerY = rect.height / 2;
+
+        const deltaX = (x - centerX) / centerX;
+        const deltaY = (y - centerY) / centerY;
+
+        const maxTilt = 4;
+        const rotateX = -deltaY * maxTilt;
+        const rotateY = deltaX * maxTilt;
+
+        card.style.transform = `perspective(800px) rotateX(${rotateX.toFixed(2)}deg) rotateY(${rotateY.toFixed(2)}deg) translateY(-3px)`;
+      });
+
+      card.addEventListener('mouseleave', () => {
+        card.style.transform = '';
+      });
+    });
+  }
+
+  // --- Document Ready ---
+  document.addEventListener('DOMContentLoaded', () => {
+    initParticles();
+    initTiltEffects();
+  });
+})();
+
+</script>
+</body>
+</html>
